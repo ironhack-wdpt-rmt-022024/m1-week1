@@ -1,0 +1,68 @@
+/* BASIC STYLES */
+
+body { 
+  background: rgb(25, 7, 37);
+}
+
+.child {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin: 5px;
+  font-size: 30px;
+  background: rgb(25, 163, 25);
+}
+
+/* FLEXBOX EXAMPLE */
+
+/* 
+
+  FLEX CONTAINER PROPERTIES:
+  flex-direction: row(default) | row-reverse | column | column-reverse;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  justify-content: flex-start(default) | flex-end | center | space-between | space-around | space-evenly;
+  align-content: flex-start(default) | flex-end | center | space-between | space-around | stretch;
+  align-items: flex-start | flex-end | center | baseline;
+*/
+
+.container {
+  height: 100vh;
+  display: flex; /* make the element a flex container */
+  flex-direction: row; /* aligns the content on the main axis (default) */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+}
+
+/* 
+  FLEX CHILDREN PROPERTIES:
+  order: 0 (default)
+  flex-grow: 0 (default)
+  flex-basis: auto (default) | <width>
+*/
+
+.first {
+  background-color: yellow;
+  order: 2;
+}
+
+.second {
+  background-color: pink;
+  order: 1;
+}
+
+
+.bigger {
+  background-color: aqua;
+  flex-grow: 1;
+}
+
+.child {
+  flex-basis: 300px;
+}
+
+.flexible {
+  flex-shrink: 2;
+}
+

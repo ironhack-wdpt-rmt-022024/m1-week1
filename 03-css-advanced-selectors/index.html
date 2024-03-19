@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Advanced Selectors</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <h1 style="font-size: 26px;">CSS | Advanced Selectors</h1>
+
+
+
+
+  <div id="pseudo_elements_example">
+    <h3>Pseudo-Elements (<code>::before</code>) / (<code>::after</code>)</h3>
+
+    <div class="box">This is a box.</div>
+
+    <p class="decorated-text">This text is decorated.</p>
+  </div>  
+
+
+
+  <div id="combining_example">
+    
+    <h3>Combining CSS Selectors</h3>
+
+    <ul> <!-- parent -->
+      <li class="item">Item 1</li>             <!-- child -->
+      <li class="item" id="item2">Item 2</li>   <!-- child -->
+    </ul>
+
+  </div>
+
+
+
+  
+  <div id="direct_descendants_example">
+
+    <h3>Direct Descendants (children) ( <code>></code> )</h3>
+    
+    <ul id="menu">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>
+        <ul>
+          <li id="nested">Nested</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+
+  <div id="all_descendants_example">
+    <h3>All Descendant Selector (<code> </code>)</h3>
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>
+        <em>item 3</em>
+      </li>
+      <li>
+        <p>
+          <span>
+            <em class="lost-el">Nested item</em>
+          </span>
+        </p>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+
+  <div id="adjacent_sibling_example">
+    <h3>Adjacent Sibling Selector ( <code>+</code> )</h3>
+
+    <div id="green-container">
+      <div>before FORMER</div>
+      <div>before FORMER</div>
+      <div id="former">#former</div>
+      <div>next to FORMER</div>
+      <div>last one...</div>
+      <div>last one...</div>
+    </div>
+
+  </div>
+
+
+
+
+  
+  <div id="selector_list_example">
+    <h2>Selector List ( <code>,</code> )</h2>
+
+    <section>
+      <h3>Heading h3</h3>
+      <h4>Heading h4</h4>
+      <h5>Heading h5</h5>
+      <h6>Heading h6</h6>
+    </section>
+    
+    <section id="container">
+      <p>
+        I am a paragraph, but also a direct child element
+      </p>
+    </section>
+
+  </div>
+
+
+
+  <br>
+
+  
+  <div id="attribute_selector_example">
+
+    <h3>Attribute Selector ( <code>[attr=value]</code> )</h3>
+
+    <a href="https://twitter.com" id="main-link">
+      Visit twitter.com
+    </a>
+    <br><br>
+    
+    <a href="https://example.com" id="side-link">
+      example.com
+    </a>
+    <br><br>
+    
+    <a href="https://icannwiki.org">
+      Visit icannwiki.org
+    </a>
+    <br><br>
+    
+    <a href="https://example.org">
+      example.org
+    </a>
+    <br><br>
+    
+    <a href="http://acm.org">acm.org</a>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

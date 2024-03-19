@@ -1,0 +1,64 @@
+/* PADDING PROPERTY
+
+	padding: <padding-top>, <padding-right>, <padding-bottom>, <padding-left>;
+  padding: <padding top and bottom>, <padding left and right>
+  padding: <padding on all 4 sides>;
+*/
+
+#padded-div {
+  border: 3px solid green;
+  width: 160px;
+  height: 100px;
+  /* padding: 10px 20px 10px 20px; */
+  padding: 10px 20px;
+}
+
+/* BORDER PROPERTY
+
+  border: <size> <style> <width>;
+*/
+
+div {
+  border: 1px solid blue;
+  /* border-color: blue; */
+  /* border-style: solid; */
+  /* border-width: 1px; */
+}
+
+
+/* MARGIN PROPERTY
+
+	margin: <margin-top>, <margin-right>, <margin-bottom>, <margin-left>;
+  margin: <margin top and bottom>, <margin left and right>
+  margin: <margin on all 4 sides>
+*/
+
+#margin-div {
+  border: 2px solid purple;
+  /* margin: 10px 20px 10px 20px; */
+  margin: 50px 20px;
+}
+
+
+/* RESPONSIVE FONT SIZE UNITS  */
+
+/* REM */
+/* The `rem` unit is relative to the root element (<html>) `font-size` */
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;    /* <h1> tag will have 35px font-size. */
+}
+
+
+/* EM */
+/* The `em` unit is relative to the parent element `font-size` */
+ul {
+  font-size: 10px;
+}
+
+li {
+  font-size: 1em;  /* <li> tags will have 10px size. */
+}

@@ -1,0 +1,108 @@
+/* CSS RESET */
+
+
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+
+/* Combining CSS Selectors */
+li.item {
+  color: red;
+}
+
+li#item2 {
+  color: blue;
+}
+
+/* Direct Descendants > */
+#menu > li {
+  border: 1px solid green;
+  width: 100px;
+}
+
+#nested {
+  border: 1px solid red;
+  width: 50px;
+}
+
+
+ul em {
+  color: purple;
+}
+
+
+/* 1 + 100 + 1  = 102 */ 
+div#green-container > div {
+  background-color: green;
+}
+
+/* 1 + 100  = 101 */
+div#former {
+  background-color: red;
+}
+
+#former + div {
+  background-color: yellow; 
+}
+
+
+
+h3, h5 {
+  color: blue;
+}
+
+h4,
+h6,
+#container > p
+{
+  color: green;
+}
+
+
+a[id] {
+  color: orange;
+}
+
+a[href="https://example.org"] {
+  color: green;
+}
+
+a[href*="example"] {
+  font-weight: bold;
+}
+
+a[href^="http:"] {
+  font-style: italic;
+  color: pink;
+}
+
+
+a[href$=".org"] {
+  border: 2px solid red;
+}
+
+
+
+.box::before {
+  content: '📦 ';
+  font-size: 40px;
+}
+
+p.decorated-text::after {
+  content: '🤩🤩 ';
+}
+
+
+p:hover {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+li:first-child {
+  color: lime;
+}
